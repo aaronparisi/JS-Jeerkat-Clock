@@ -1,0 +1,162 @@
+body {
+  background-color: #E1695F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Bungee", cursive;
+  font-size: 24px;
+}
+
+h1 {
+  font-family: "Bungee Shade", cursive;
+  font-size: 60px;
+  margin: 25px 0px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.time-display {
+  font-size: 48px;
+  display: flex;
+  justify-content: space-between;
+  width: 300px;
+}
+
+.time {
+  margin-right: 15px;
+}
+
+.meerkat-image {
+  height: 300px;
+  margin: 25px 0px;
+  border: 3px solid black;
+  border-radius: 20px;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: stretch; */
+  width: min-content;
+  height: 200px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.time-blocks {
+  border: 1px solid black;
+  flex-grow: 5;
+  display: flex;
+  flex-direction: row;
+  height: 90%;
+  position: relative;
+}
+
+.time-block {
+  border-right: 1px solid #bb5950;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+#time-block-23 {
+  border-right: none;
+}
+
+.time-block-hover {
+  background-color: #cc6258;
+}
+
+.event {
+  position: absolute;
+  top: 2px;
+
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  background-color: aqua;
+  width: 45px;
+  height: 98%;
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+*::selection {
+  color: none;
+  background: none;
+}
+
+.event:hover {
+  cursor: grab;
+}
+
+#selected-event {
+  cursor: grabbing;
+}
+
+#clicked-event {
+  background-color: rgb(0, 204, 204);
+  z-index: 9999;
+}
+
+.event-delete-button {
+  font-family: 'Bungee Hairline', cursive;
+  font-size: 10px;
+  border: 1px solid rgb(0, 204, 204);
+  border-radius: 5px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  padding: 1px 0px;
+}
+
+.event-delete-button:hover {
+  background-color: rgb(0, 204, 204);
+  border-color: rgb(0, 167, 167);
+  cursor: pointer;
+}
+
+.hour-labels {
+  height: 10%;
+  display: flex;
+  flex-direction: row;
+  font-family: "Bungee Hairline", cursive;
+  font-size: 17px;
+  position: absolute;
+  bottom: -25px;
+  left: -25px;
+  z-index: -1;
+}
+
+.hour-label {
+  /* border-right: 1px solid black; */
+  width: 50px;
+  text-align: center;
+}
+
+.party-button {
+  background-color: black;
+  color: white;
+  font-family: "Bungee", cursive;
+  box-shadow: none;
+  border: none;
+  font-size: 36px;
+  padding: 10px 150px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.party-hover {
+  cursor: pointer;
+  padding: 20px 180px;
+  margin-top: 10px;
+  background-color: aqua;
+  color: black;
+}

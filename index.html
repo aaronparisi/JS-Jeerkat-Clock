@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jeerkat Clock</title>
+
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Bungee+Shade&family=Bungee+Hairline&display=swap" rel="stylesheet">
+
+  <script src="index.js" type="module" defer></script>
+</head>
+<body>
+  <h1>Jeerkat Clock</h1>
+
+  <h2>Can I haz time??</h2>
+  <div class="time-display">
+    <div class="time"></div>
+    <div class="amPm"></div>
+  </div>
+
+  <img class="meerkat-image" src="">
+
+  <div class="timeline">
+    <div class="time-blocks" id="time-blocks">
+      <div class="time-block" id="time-block-0" data-hour="0"></div>
+      <div class="time-block" id="time-block-1" data-hour="1"></div>
+      <div class="time-block" id="time-block-2" data-hour="2"></div>
+      <div class="time-block" id="time-block-3" data-hour="3"></div>
+      <div class="time-block" id="time-block-4" data-hour="4"></div>
+      <div class="time-block" id="time-block-5" data-hour="5"></div>
+      <div class="time-block" id="time-block-6" data-hour="6"></div>
+      <div class="time-block" id="time-block-7" data-hour="7"></div>
+      <div class="time-block" id="time-block-8" data-hour="8"></div>
+      <div class="time-block" id="time-block-9" data-hour="9"></div>
+      <div class="time-block" id="time-block-10" data-hour="10"></div>
+      <div class="time-block" id="time-block-11" data-hour="11"></div>
+      <div class="time-block" id="time-block-12" data-hour="12"></div>
+      <div class="time-block" id="time-block-13" data-hour="13"></div>
+      <div class="time-block" id="time-block-14" data-hour="14"></div>
+      <div class="time-block" id="time-block-15" data-hour="15"></div>
+      <div class="time-block" id="time-block-16" data-hour="16"></div>
+      <div class="time-block" id="time-block-17" data-hour="17"></div>
+      <div class="time-block" id="time-block-18" data-hour="18"></div>
+      <div class="time-block" id="time-block-19" data-hour="19"></div>
+      <div class="time-block" id="time-block-20" data-hour="20"></div>
+      <div class="time-block" id="time-block-21" data-hour="21"></div>
+      <div class="time-block" id="time-block-22" data-hour="22"></div>
+      <div class="time-block" id="time-block-23" data-hour="23"></div>
+
+      <div 
+        class="event" 
+        id="wakeup-event"
+        data-start-time="9"
+        data-end-time="10"
+        data-duration="1"
+        data-selected="false"
+      >
+        <div class="event-delete-button">X</div>
+        <div class="event-title">Wakeup</div>
+      </div>
+
+      <div 
+        class="event" 
+        id="lounge-event"
+        data-start-time="11"
+        data-end-time="12"
+        data-duration="1"
+        data-selected="false"
+      >
+        <div class="event-delete-button">X</div>
+        <div class="event-title">Lounge</div>
+      </div>
+
+      <div 
+        class="event" 
+        id="fight-event"
+        data-start-time="16"
+        data-end-time="18"
+        data-duration="2"
+        data-selected="false"
+      >
+        <div class="event-delete-button">X</div>
+        <div class="event-title">Fight</div>
+      </div>
+
+      <div
+        class="event" 
+        id="cuddle-event"
+        data-start-time="20"
+        data-end-time="21"
+        data-duration="1"
+        data-selected="false"
+      >
+        <div class="event-delete-button">X</div>
+        <div class="event-title">Cuddle</div>
+      </div>
+
+      <div 
+        class="event" 
+        id="sleep-event"
+        data-start-time="22"
+        data-end-time="23"
+        data-duration="1"
+        data-selected="false"
+      >
+        <div class="event-delete-button">X</div>
+        <div class="event-title">Sleep</div>
+      </div>
+
+    </div>
+
+    <div class="hour-labels">
+      <div class="hour-label" data-hour="0" id="hour-0">12AM</div>
+      <div class="hour-label" data-hour="1" id="hour-1">1</div>
+      <div class="hour-label" data-hour="2" id="hour-2">2</div>
+      <div class="hour-label" data-hour="3" id="hour-3">3</div>
+      <div class="hour-label" data-hour="4" id="hour-4">4</div>
+      <div class="hour-label" data-hour="5" id="hour-5">5</div>
+      <div class="hour-label" data-hour="6" id="hour-6">6</div>
+      <div class="hour-label" data-hour="7" id="hour-7">7</div>
+      <div class="hour-label" data-hour="8" id="hour-8">8</div>
+      <div class="hour-label" data-hour="9" id="hour-9">9</div>
+      <div class="hour-label" data-hour="10" id="hour-10">10</div>
+      <div class="hour-label" data-hour="11" id="hour-11">11</div>
+      <div class="hour-label" data-hour="12" id="hour-12">12PM</div>
+      <div class="hour-label" data-hour="13" id="hour-13">1</div>
+      <div class="hour-label" data-hour="14" id="hour-14">2</div>
+      <div class="hour-label" data-hour="15" id="hour-15">3</div>
+      <div class="hour-label" data-hour="16" id="hour-16">4</div>
+      <div class="hour-label" data-hour="17" id="hour-17">5</div>
+      <div class="hour-label" data-hour="18" id="hour-18">6</div>
+      <div class="hour-label" data-hour="19" id="hour-19">7</div>
+      <div class="hour-label" data-hour="20" id="hour-20">8</div>
+      <div class="hour-label" data-hour="21" id="hour-21">9</div>
+      <div class="hour-label" data-hour="22" id="hour-22">10</div>
+      <div class="hour-label" data-hour="23" id="hour-23">11</div>
+      <div class="hour-label" data-hour="24" id="hour-24">12AM</div>
+    </div>
+  </div>
+
+  <button class="party-button">Party Time!</button>
+</body>
+</html>
